@@ -1,0 +1,9 @@
+grav:
+  image: yobasystems/alpine-grav:latest
+  environment:
+    VIRTUAL_HOST: blog.ddladmin.io
+  ports:
+    - 8002:80
+  volumes:
+    - ~/appdata/gravCMS01:/usr/html
+  restart: always
